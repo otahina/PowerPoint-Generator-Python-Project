@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">{{ current_user.username }}</h5>
+            <h6 class="card-subtitle mb-2">{{ current_user.email }}</h6>
+            <p class="card-text">Here you can manage your profile.</p>
+            <a href="{{ url_for('profile') }}" class="card-link">Edit Profile</a>
+        </div>
+    </div>
+{% endblock content %}
+

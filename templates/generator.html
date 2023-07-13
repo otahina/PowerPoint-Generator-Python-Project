@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="generate-showcase">
+    <form id="generate-form" method="POST" action="{{ url_for('generate') }}">
+        <label for="presentation_title">What is the title for the presentation?</label>
+        <input type="text" id="presentation_title" name="presentation_title" required>
+        <label for="number_of_slide">How many slides do you need?</label>
+        <input type="number" id="number_of_slide" name="number_of_slide" required>
+
+        <label for="user_text">Enter your content</label>
+        <textarea id="user_text" name="user_text" required></textarea>
+
+        <div class="template-choice">
+            Choose a template:
+            <input type="radio" id="simple" name="template_choice" value="simple">
+            <label for="simple">Simple</label>
+            <input type="radio" id="bright_modern" name="template_choice" value="bright_modern">
+            <label for="bright_modern">Bright Modern</label>
+            <input type="radio" id="dark_modern" name="template_choice" value="dark_modern">
+            <label for="dark_modern">Dark Modern</label>
+        </div>
+
+        <button id="generate-button" type="submit">Generate your presentation!</button>
+    </form>
+    <div id="loading-indicator">Generating your presentation...</div>
+    <div class="generated-slide">
+        <div class="generated-header"><a href="{{ url_for('download_file', filename='generated_presentation.pptx') }}">Click
+            to Download</a></div>
+    </div>
+</div>
+{% endblock content %}
+
+
+
+
+
+
