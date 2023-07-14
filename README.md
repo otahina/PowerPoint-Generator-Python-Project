@@ -9,3 +9,18 @@
 * **Customizable Themes**: Choose color themes for your presentation, giving it a personalized touch.
 * **User-Friendly Interface**: Clear instructions and an intuitive design make the PowerPoint generation process seamless and straightforward.
 * **Secure Authentication**: Register and log in with peace of mind, as user information is securely stored.
+
+## Demo Highlights 🎬
+
+Comming soon!
+
+## Getting Started! 😆
+
+To get a local copy up and running follow these steps:
+
+1: **Clone the repository**:
+
+```
+git clone https://github.com/otahina/
+
+```
