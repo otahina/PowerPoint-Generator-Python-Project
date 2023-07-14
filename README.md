@@ -18,9 +18,21 @@ Comming soon!
 
 To get a local copy up and running follow these steps:
 
-1: **Clone the repository**:
+1. **Clone the repository**:
 
 ```
-gh repo clone otahina/PowerPoint-Generator-Python-Project
+git clone otahina/PowerPoint-Generator-Python-Project
+```
 
+2. **Navigate to the project directory**:
+
+```
+PowerPoint-Generator-Python-Project
+```
+
+3. **Install the required Python packages. This project relies on several Python packages for its functionality**:
+
+
+```
+pip install flask flask_login flask_bcrypt flask_sqlalchemy python_dotenv python_pptx
 ```
