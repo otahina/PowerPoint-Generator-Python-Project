@@ -34,6 +34,9 @@
     <div id="try-now">
         <a href="{{ url_for('generate') }}" class="btn btn-primary btn-lg mt-4">Try Now</a>
     </div>
+    <div id="how-it-works">
+        <a href="#instructions">>How to Use?</a>
+    </div>
 </div>
 <div class="description">
     <div class="des-title">
@@ -44,6 +47,7 @@
         <div class="col-sm-4">
             <div class="card">
                 <div class="card-body">
+                    <img id="content-creation" src="./static/img/content-creation.png">
                     <h5 class="card-title">Efficient content creation</h5>
                     <p class="card-text">With the use of advanced AI, your PowerPoint presentations are generated
                         with ease. Simply provide your desired content, and our application will handle the structuring
@@ -72,4 +76,7 @@
         </div>
     </div>
 </div>
+<section id="instructions">
+    <h2>How To Use</h2>
+</section>
 {% endblock content %}

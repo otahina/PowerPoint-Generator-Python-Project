@@ -10,7 +10,7 @@
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- FullCalendar CSS -->
     <link href='https://fullcalendar.io/releases/main/base.css' rel='stylesheet'/>
@@ -50,11 +50,12 @@
                     {% if current_user.is_authenticated %}
                     <a class="nav-item nav-link" href="{{ url_for('profile') }}">Profile</a>
                     <a class="nav-item nav-link" href="{{ url_for('logout') }}">Logout</a>
-                <div class="navbar-nav">
-                    {% else %}
-                    <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
-                    <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
-                    {% endif %}
+                    <div class="navbar-nav">
+                        {% else %}
+                        <a class="nav-item nav-link" href="{{ url_for('login') }}">Login</a>
+                        <a class="nav-item nav-link" href="{{ url_for('register') }}">Register</a>
+                        {% endif %}
+                    </div>
                 </div>
             </div>
         </div>
