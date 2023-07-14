@@ -167,6 +167,10 @@ a:hover {
   padding: 1.5rem;
 }
 
+.card-text {
+    font-weight: 200;
+}
+
 .article-title {
   color: #fff;
 }
