@@ -105,9 +105,29 @@ body .container.custom-main {
     padding-left: 80px;
 }
 
-.description h2{
+.description h4{
+    width: 360px;
+    height: 60px;
+    padding: 0px;
+}
 
-    margin-bottom: 20px;
+.des-title {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.des-title h4{
+    margin: 0px;
+    font-size: 30px;
+}
+
+#rocket {
+    height: 60px;
+    width: 60px;
+    margin: 0px;
+    padding-bottom: 10px;
 }
 
 .content-name {
@@ -140,6 +160,7 @@ a:hover {
   border: none;
   box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
   width: 400px;
+  margin-top: 40px;
 }
 
 .card-body {
