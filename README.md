@@ -1,8 +1,8 @@
 ![Banner Image](./for_readme/banner.png)
 
-## PowerPoint Generator is a smart web application that automates the creation of PowerPoint presentations.
-
 [![made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
+## PowerPoint Generator is a smart web application that automates the creation of PowerPoint presentations.
 
 ## Features 🎨
 
