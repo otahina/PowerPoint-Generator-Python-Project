@@ -2,6 +2,8 @@
 
 ## PowerPoint Generator is a smart web application that automates the creation of PowerPoint presentations.
 
+[![made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+
 ## Features 🎨
 
 * **AI-Driven Content Creation**: Utilize the power of GPT-3.5 Turbo to generate slide content based on your input.
