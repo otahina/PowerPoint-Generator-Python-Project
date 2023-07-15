@@ -39,3 +39,5 @@ PowerPoint-Generator-Python-Project
 ```
 pip install flask flask_login flask_bcrypt flask_sqlalchemy python_dotenv python_pptx
 ```
+
+## Livence
