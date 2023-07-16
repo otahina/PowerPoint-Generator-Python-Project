@@ -40,7 +40,7 @@ PowerPoint-Generator-Python-Project
 pip install flask flask_login flask_bcrypt flask_sqlalchemy python_dotenv python_pptx
 ```
 
-## Setup the Secret Key and OpenAI Key 🔑
+
 
 
 1. The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
