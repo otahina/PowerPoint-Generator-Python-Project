@@ -45,6 +45,15 @@ pip install flask flask_login flask_bcrypt flask_sqlalchemy python_dotenv python
 
 The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
 
-You need to set these as environment variables in your terminal. On Unix/Linux/macOS, you can do this with the export command:
+You need to set these as environment variables in your terminal. On **Unix/Linux/macOS**, you can do this with the 'export' command:
+
+```
+export SECRET_KEY=your_secret_key
+export OPENAI_KEY=your_openai_key
+```
+Replace your_secret_key with a secure, random string. Replace your_openai_key with your personal OpenAI key.
+
+
+On **Windows**, you can do this with the 'set' command:
 
 
