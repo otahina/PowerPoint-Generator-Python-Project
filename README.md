@@ -62,4 +62,4 @@ set OPENAI_KEY=your_openai_key
 ```
 ⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
 
-2.Your Flask application will access these environment variables with the os.getenv() function.
+
