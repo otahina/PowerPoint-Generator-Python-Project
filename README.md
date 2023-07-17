@@ -19,7 +19,7 @@ Comming soon!
 
 ## Getting Started! 😆
 
-To get a local copy up and running follow these steps:
+
 
 1. **Clone the repository**:
 
