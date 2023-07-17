@@ -60,6 +60,6 @@ On **Windows**, you can do this with the 'set' command:
 set SECRET_KEY=your_secret_key
 set OPENAI_KEY=your_openai_key
 ```
-
+⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
 
 
