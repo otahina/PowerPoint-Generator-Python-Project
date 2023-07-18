@@ -40,6 +40,13 @@ PowerPoint-Generator-Python-Project
 pip install flask flask_login flask_bcrypt flask_sqlalchemy python_dotenv python_pptx
 ```
 
+4. **Run the application!**
+
+```
+python3 flaskapp.py
+```
+Make sure you set up the API key below first🙂
+
 ## Setup the Secret Key and OpenAI Key 🔑
 
 
@@ -61,5 +68,11 @@ set SECRET_KEY=your_secret_key
 set OPENAI_KEY=your_openai_key
 ```
 ⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
+
+## License 📄
+
+This project is licensed under the terms of the MIT license.
+
+
 
 
