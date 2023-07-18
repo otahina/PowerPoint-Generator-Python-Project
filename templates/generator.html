@@ -24,12 +24,21 @@
     </form>
     <div id="loading-indicator">Generating your presentation...</div>
     <div class="generated-slide">
-        <div class="generated-header"><a href="{{ url_for('download_file', filename='generated_presentation.pptx') }}">Click
-            to Download</a></div>
+        <div class="generated-header"><a href="{{ url_for('download_file', filename='generated_presentation.pptx') }}">Click to Download</a></div>
     </div>
 </div>
-{% endblock content %}
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function() {
+    $("#generate-form").submit(function(e) {
+        $("#loading-indicator").show();
+        $("#generate-button").prop('disabled', true);
+    });
+});
+</script>
+
+{% endblock content %}
 
 
 

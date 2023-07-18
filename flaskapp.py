@@ -97,6 +97,7 @@ def generate():
 
     return render_template('generator.html', title='Generate')
 
+
 @app.route('/download/<filename>', methods=['GET'])
 def download_file(filename):
     try:
