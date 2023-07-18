@@ -40,6 +40,13 @@ PowerPoint-Generator-Python-Project
 pip install flask flask_login flask_bcrypt flask_sqlalchemy python_dotenv python_pptx
 ```
 
+4. **Run the application!**
+
+```
+python3 flaskapp.py
+```
+Make sure you set up the API key below first🙂
+
 ## Setup the Secret Key and OpenAI Key 🔑
 
 
