@@ -11,7 +11,7 @@ body {
     background: #000080;
 }
 
-.copyright h3{
+.copyright h3, p{
     color: white;
     font-size: 15px;
     font-weight: 300;
