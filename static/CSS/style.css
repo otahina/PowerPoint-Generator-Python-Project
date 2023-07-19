@@ -285,7 +285,7 @@ a.article-title:hover {
 
 .generate-showcase{
     margin: 40px 40px 0px 40px;
-    height: 800px;
+    height: 1000px;
     font-size: 20px;
 }
 
@@ -348,6 +348,7 @@ input[type="radio"]:checked + label {
 .generated-header {
     font-weight: bold;
     margin-bottom: 10px;
+    height: 500px;
 }
 
 #loading-indicator{
@@ -358,6 +359,33 @@ input[type="radio"]:checked + label {
 #loading-indicator {
     display: none;
 }
+
+
+.spinner {
+    padding-left: 30px;
+    border: 16px solid #f3f3f3;
+    border-radius: 20%;
+    border-top: 16px solid #5598de;
+    border-right: 16px solid #7f87ff;
+    border-bottom: 16px solid #f65aad;
+    width: 70px;
+    height: 70px;
+    -webkit-animation: spin 2s linear infinite; /* Safari */
+    animation: spin 2s linear infinite;
+}
+
+/* Safari */
+
+@-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 
 /* Register */
 

@@ -56,3 +56,9 @@ document.addEventListener('DOMContentLoaded', function() {
         $('#generate-form').submit();
     });
 });
+
+// Load indicator
+
+document.getElementById('generate-form').addEventListener('submit', function() {
+     document.getElementById('loading-indicator').style.display = 'block';
+});

@@ -22,7 +22,11 @@
 
         <button id="generate-button" type="submit">Generate your presentation!</button>
     </form>
-    <div id="loading-indicator">Generating your presentation...</div>
+
+    <div id="loading-indicator" style="display: none;">
+        <div class="spinner"></div>
+        <p>Generating your presentation...</p>
+    </div>
     <div class="generated-slide">
         <div class="generated-header"><a href="{{ url_for('download_file', filename='generated_presentation.pptx') }}">Click to Download</a></div>
     </div>

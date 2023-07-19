@@ -18,7 +18,7 @@ def build_conversation(user_message):
     return [
         {"role": "system",
          "content": "You are an assistant that gives the idea for PowerPoint presentations. When answering, give the user the summarized content for each slide based on the number of slide. "
-                    "And the format of the answer must be Slide X(the number of the slide): {title of the content} /n Content: /n content with 2 or more bullet points."},
+                    "And the format of the answer must be Slide X(the number of the slide): {title of the content} /n Content: /n just content with 2 or 3 bullet points without any titles."},
         {"role": "user", "content": user_message}
     ]
 
