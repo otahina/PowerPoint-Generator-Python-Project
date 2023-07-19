@@ -348,7 +348,7 @@ input[type="radio"]:checked + label {
 .generated-header {
     font-weight: bold;
     margin-bottom: 10px;
-    height: 500px;
+    height: 100px;
 }
 
 #loading-indicator{

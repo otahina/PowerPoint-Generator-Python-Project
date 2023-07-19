@@ -88,7 +88,8 @@ def generate():
         presentation_title = request.form['presentation_title']
 
         user_message = f"I want you to come up with the idea for the power point. The number of slide is {number_of_slide}. " \
-                       f"The content is: {user_text}. Can you summarize the content for each slide? The title of the content must not end with the same word."
+                       f"The content is: {user_text}. Can you summarize the content for each slide? The title of content for each slide must be unique " \
+                       f"and last word must be important."
 
         assistant_response = chat_development(user_message)
         print(assistant_response)
