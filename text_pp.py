@@ -1,11 +1,11 @@
-from pptx import Presentation
+import io
+import json
 import os
+
+import requests
+from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.util import Inches
-import requests
-import json
-import io
-import urllib.parse
 
 dir_path = 'static/presentations'
 
@@ -26,23 +26,25 @@ def parse_response(response):
     return slides_content
 
 
-def search_pixabay_images(query):
-    API_KEY = os.getenv('PIXABAY_API_KEY')
+def search_pexels_images(query):
+    API_KEY = os.getenv('PEXELS_API_KEY')
 
     # extract keyword
     query = query.split()[-1].lower()
     print(query)
-    safe_query = urllib.parse.quote_plus(query)
+    PEXELS_API_URL = f'https://api.pexels.com/v1/search?query={query}&per_page=1'
 
-    PIXABAY_API_URL = f'https://pixabay.com/api/?key={API_KEY}&q={safe_query}&image_type=photo'
+    headers = {
+        'Authorization': API_KEY
+    }
 
-    response = requests.get(PIXABAY_API_URL)
+    response = requests.get(PEXELS_API_URL, headers=headers)
 
     data = json.loads(response.text)
 
-    if 'hits' in data:
-        if len(data['hits']) > 0:
-            return data['hits'][0]['webformatURL']
+    if 'photos' in data:
+        if len(data['photos']) > 0:
+            return data['photos'][0]['src']['medium']
 
     return None
 
@@ -96,7 +98,7 @@ def create_ppt(slides_content, template_choice, presentation_title):
 
 
         # fetch image URL from Pixabay based on the slide's title
-        image_url = search_pixabay_images(slide_content['title'])
+        image_url = search_pexels_images(slide_content['title'])
         if image_url is not None:
             # download the image
             image_data = requests.get(image_url).content
@@ -113,6 +115,15 @@ def create_ppt(slides_content, template_choice, presentation_title):
             top = slide_height - image_height - Inches(4) # calculate top position
 
             slide.shapes.add_picture(image_stream, left, top, width=image_width, height=image_height)
+
+    # add credits slide
+    slide = prs.slides.add_slide(content_slide_layout)
+    for placeholder in slide.placeholders:
+        if placeholder.placeholder_format.type == 1:  # Title
+            placeholder.text = "Credits"
+        elif placeholder.placeholder_format.type == 7:  # Content
+            placeholder.text = "Images provided by Pexels: https://www.pexels.com"
+
 
     # Delete the first two slides after all new slides have been added
     delete_first_two_slides(prs)
