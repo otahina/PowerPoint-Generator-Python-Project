@@ -485,3 +485,7 @@ pre {
     color: white;
     border-radius: 20px;
 }
+
+.profile-info p{
+    color: white;
+}
