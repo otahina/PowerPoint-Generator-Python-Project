@@ -58,7 +58,7 @@ def delete_first_two_slides(presentation):
             xml_slides.remove(slides[slide_id])
 
 
-def create_ppt(slides_content, template_choice, presentation_title):
+def create_ppt(slides_content, template_choice, presentation_title, insert_image):
     template_path = os.path.join(dir_path, f"{template_choice}.pptx")
 
     prs = Presentation(template_path)
@@ -75,6 +75,12 @@ def create_ppt(slides_content, template_choice, presentation_title):
             for run in paragraph.runs:
                 run.font.name = 'Times New Roman'
                 run.font.color.rgb = RGBColor(255, 165, 0)  # RGB for orange color
+
+    elif template_choice == 'bright_modern':
+        for paragraph in title.text_frame.paragraphs:
+            for run in paragraph.runs:
+                run.font.name = 'Arial'
+                run.font.color.rgb = RGBColor(255, 20, 147)  # RGB for deep pink color
 
     # add content slides
     for slide_content in slides_content:
@@ -96,34 +102,41 @@ def create_ppt(slides_content, template_choice, presentation_title):
                             run.font.name = 'Times New Roman'
                             run.font.color.rgb = RGBColor(255, 255, 255)  # RGB for white color
 
+        if insert_image:
+            # fetch image URL from Pixabay based on the slide's title
+            image_url = search_pexels_images(slide_content['title'])
+            if image_url is not None:
+                # download the image
+                image_data = requests.get(image_url).content
+                # load image into BytesIO object
+                image_stream = io.BytesIO(image_data)
+                # add the image at the specified position
+                slide_width = Inches(20)
+                slide_height = Inches(15)
 
-        # fetch image URL from Pixabay based on the slide's title
-        image_url = search_pexels_images(slide_content['title'])
-        if image_url is not None:
-            # download the image
-            image_data = requests.get(image_url).content
-            # load image into BytesIO object
-            image_stream = io.BytesIO(image_data)
-            # add the image at the specified position
-            slide_width = Inches(20)
-            slide_height = Inches(15)
+                image_width = Inches(8)  # width of image
+                image_height = Inches(5)  # height of image
 
-            image_width = Inches(8)  # width of image
-            image_height = Inches(5)  # height of image
+                left = slide_width - image_width  # calculate left position
+                top = slide_height - image_height - Inches(4) # calculate top position
 
-            left = slide_width - image_width  # calculate left position
-            top = slide_height - image_height - Inches(4) # calculate top position
-
-            slide.shapes.add_picture(image_stream, left, top, width=image_width, height=image_height)
+                slide.shapes.add_picture(image_stream, left, top, width=image_width, height=image_height)
 
     # add credits slide
     slide = prs.slides.add_slide(content_slide_layout)
     for placeholder in slide.placeholders:
         if placeholder.placeholder_format.type == 1:  # Title
             placeholder.text = "Credits"
+            for paragraph in placeholder.text_frame.paragraphs:
+                for run in paragraph.runs:
+                    run.font.name = 'Times New Roman'
+                    run.font.color.rgb = RGBColor(255, 165, 0)
         elif placeholder.placeholder_format.type == 7:  # Content
             placeholder.text = "Images provided by Pexels: https://www.pexels.com"
-
+            for paragraph in placeholder.text_frame.paragraphs:
+                for run in paragraph.runs:
+                    run.font.name = 'Times New Roman'
+                    run.font.color.rgb = RGBColor(255, 255, 255)
 
     # Delete the first two slides after all new slides have been added
     delete_first_two_slides(prs)

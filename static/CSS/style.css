@@ -442,6 +442,22 @@ pre {
     color: black;
 }
 
+#enter-your-content {
+    padding-top: 10px;
+    color: orange;
+}
+
+.text-for-info {
+    color: orange;
+}
+
+.form-check-label {
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    color: orange;
+}
+
 /* Register */
 
 .content-section {
