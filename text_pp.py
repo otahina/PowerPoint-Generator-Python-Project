@@ -1,7 +1,7 @@
 from pptx import Presentation
 import os
 from pptx.dml.color import RGBColor
-from pptx.util import Inches, Pt
+from pptx.util import Inches
 import requests
 import json
 import io

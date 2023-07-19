@@ -386,21 +386,6 @@ input[type="radio"]:checked + label {
     100% { transform: rotate(360deg); }
 }
 
-
-/* Register */
-
-.content-section {
- background: linear-gradient(to bottom, #000033, #000080);
- height: 600px;
-}
-
-.content-section legend{
-    color: white;
-}
-
-
-/* Web developer */
-
 .generated-container {
     max-width: 600px;
     margin: 0 auto;
@@ -455,4 +440,48 @@ pre {
 .generated-body h3 {
     margin-top: 0;
     color: black;
+}
+
+/* Register */
+
+.content-section {
+ background: linear-gradient(to bottom, #000033, #000080);
+ height: 600px;
+}
+
+.content-section legend{
+    color: white;
+}
+
+/* Profile */
+
+.profile-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px 20px 80px;
+    height: 800px;
+}
+.profile-info {
+    flex: 0 0 30%;
+    margin-right: 2%;
+}
+.saved-presentations {
+    flex: 1;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+}
+.saved-presentations h2{
+    color: black;
+}
+.profile-info img {
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+.profile-info .btn {
+    background-color: #007BFF;
+    color: white;
+    border-radius: 20px;
 }
