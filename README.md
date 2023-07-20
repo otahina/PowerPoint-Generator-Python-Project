@@ -16,7 +16,7 @@
 ## Demo Highlights 🎬
 
 
-https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/cb7a06d8-ccfb-4957-aafd-96097e2a8a91
+https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/b9ab335a-4235-483c-a50c-882c7487f6da
 
 
 ## Getting Started! 🚀
