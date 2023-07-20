@@ -65,7 +65,7 @@ Here's a brief description of each key and how to obtain them:
 
 **SECRET_KEY**: 🔐This is used for web application security such as session management. You can create your own secure, random string for this.
 
-**OPENAI_KEY**: 🤖This is required to access the OPENAI API. Although there's a limitation with the free version, it's sufficient for trying out this web application on your local machine. You can obtain this key by creating an account on the https://openai.com.
+**OPENAI_KEY**: 🤖This is required to access the OPENAI API. Although there's a limitation with the free version, it's sufficient for trying out this web application on your local machine. You can obtain this key by creating an account on the https://platform.openai.com.
 
 **PEXELS_API_KEY**: 🏞️ This key is used for the free image search API provided by Pexels. It's very useful for adding creative images to your presentations. You can get this key by creating a free account on the https://www.pexels.com/api
 After registering, the API key is automatically generated for you.
