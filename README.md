@@ -19,7 +19,7 @@
 https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/48e8e0ad-a662-4848-9c01-06b2bd8ca67c
 
 
-## Getting Started! 😆
+## Getting Started! 🚀
 
 To get a local copy up and running follow these steps:
 
@@ -59,9 +59,14 @@ You need to set these as environment variables in your terminal. On **Unix/Linux
 ```
 export SECRET_KEY=your_secret_key
 export OPENAI_KEY=your_openai_key
+export PEXELS_API_KEY=your_pexels_key
 ```
 Replace your_secret_key with a secure, random string. Replace your_openai_key with your personal OpenAI key.
+SECRET_KEY is for web application. You can decide on your own.
 
+OPENAI_KEY is from OPENAI API. There is a limitation in free version, but when you want to try this web application on your local machine, free version is enough. 
+
+PEXELS_API_KEY is free image search API, it is very useful. You can create an account for free, and it automatically generates the API key. 
 
 On **Windows**, you can do this with the 'set' command:
 
