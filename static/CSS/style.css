@@ -312,6 +312,11 @@ input[type="radio"]:checked + label {
     color: white;
 }
 
+#presenter_name {
+    width: 800px;
+    height: 50px;
+}
+
 #number_of_slide {
     width: 150px;
     height: 50px;
@@ -360,6 +365,10 @@ input[type="radio"]:checked + label {
     display: none;
 }
 
+#loading-indicator p{
+    font-size: 20px;
+    font-weight: 600;
+}
 
 .spinner {
     padding-left: 30px;
@@ -374,7 +383,6 @@ input[type="radio"]:checked + label {
     animation: spin 2s linear infinite;
 }
 
-/* Safari */
 
 @-webkit-keyframes spin {
     0% { -webkit-transform: rotate(0deg); }

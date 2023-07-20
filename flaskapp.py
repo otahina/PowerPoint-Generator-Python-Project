@@ -86,6 +86,7 @@ def generate():
         user_text = request.form['user_text']
         template_choice = request.form.get('template_choice')
         presentation_title = request.form['presentation_title']
+        presenter_name = request.form['presenter_name']
         insert_image = 'insert_image' in request.form
 
         user_message = f"I want you to come up with the idea for the power point. The number of slide is {number_of_slide}. " \
@@ -95,7 +96,7 @@ def generate():
         assistant_response = chat_development(user_message)
         print(assistant_response)
         slides_content = parse_response(assistant_response)
-        create_ppt(slides_content, template_choice, presentation_title, insert_image)
+        create_ppt(slides_content, template_choice, presentation_title, presenter_name, insert_image)
 
     return render_template('generator.html', title='Generate')
 

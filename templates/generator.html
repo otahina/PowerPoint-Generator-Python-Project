@@ -4,6 +4,8 @@
     <form id="generate-form" method="POST" action="{{ url_for('generate') }}">
         <label class="text-for-info" for="presentation_title">What is the title for the presentation?</label>
         <input type="text" id="presentation_title" name="presentation_title" required>
+        <label class="text-for-info" for="presenter_name">Presented by</label>
+        <input type="text" id="presenter_name" name="presenter_name" required>
         <label class="text-for-info" for="number_of_slide">How many slides do you need?</label>
         <input type="number" id="number_of_slide" name="number_of_slide" required>
 
@@ -30,7 +32,7 @@
         <button id="generate-button" type="submit">Generate your presentation!</button>
     </form>
 
-    <div id="loading-indicator" style="display: none;">
+    <div id="loading-indicator">
         <div class="spinner"></div>
         <p>Generating your presentation...</p>
     </div>
