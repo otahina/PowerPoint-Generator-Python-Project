@@ -61,18 +61,21 @@ export SECRET_KEY=your_secret_key
 export OPENAI_KEY=your_openai_key
 export PEXELS_API_KEY=your_pexels_key
 ```
-Replace your_secret_key with a secure, random string. Replace your_openai_key with your personal OpenAI key.
-SECRET_KEY is for web application. You can decide on your own.
+Here's a brief description of each key and how to obtain them:
 
-OPENAI_KEY is from OPENAI API. There is a limitation in free version, but when you want to try this web application on your local machine, free version is enough. 
+**SECRET_KEY**: 🔐This is used for web application security such as session management. You can create your own secure, random string for this.
 
-PEXELS_API_KEY is free image search API, it is very useful. You can create an account for free, and it automatically generates the API key. 
+**OPENAI_KEY**: 🤖This is required to access the OPENAI API. Although there's a limitation with the free version, it's sufficient for trying out this web application on your local machine. You can obtain this key by creating an account on the https://openai.com.
+
+**PEXELS_API_KEY**: 🏞️ This key is used for the free image search API provided by Pexels. It's very useful for adding creative images to your presentations. You can get this key by creating a free account on the https://www.pexels.com/api
+After registering, the API key is automatically generated for you.
 
 On **Windows**, you can do this with the 'set' command:
 
 ```
 set SECRET_KEY=your_secret_key
 set OPENAI_KEY=your_openai_key
+set PEXELS_API_KEY=your_pexels_key
 ```
 ⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
 
