@@ -9,6 +9,11 @@ body {
 
 .footer {
     background: #000080;
+    height: 250px;
+}
+
+.copyright h3 {
+    padding-top: 150px;
 }
 
 .copyright h3, p{
@@ -16,6 +21,11 @@ body {
     font-size: 15px;
     font-weight: 300;
     margin-left: 40px;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {

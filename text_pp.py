@@ -30,7 +30,7 @@ def search_pexels_images(query):
     API_KEY = os.getenv('PEXELS_API_KEY')
 
     # extract keyword
-    query = query.split()[-1].lower()
+    query = query.split()[0].lower()
     print(query)
     PEXELS_API_URL = f'https://api.pexels.com/v1/search?query={query}&per_page=1'
 
