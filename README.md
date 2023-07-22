@@ -48,7 +48,7 @@ Star the repo to start your contribution ⭐️
 Step 2: Fork it
 </summary>
 
-On the [GitHub page for this repository]([https://github.com/ndleah/python-mini-project](https://github.com/otahina/PowerPoint-Generator-Python-Project.git)), click on the Button "**Fork**".
+On the [GitHub page for this repository](https://github.com/otahina/PowerPoint-Generator-Python-Project.git), click on the Button "**Fork**".
 
 ![fork image](https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png)
 
@@ -118,7 +118,7 @@ git checkout -b <branch-name>
 ---
 <details>
 <summary>
-Step 6: Pull Request
+Step 5: Pull Request
 </summary>
 
 Go to the GitHub page of _your fork_, and **make a pull request**:
