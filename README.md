@@ -9,7 +9,7 @@
 
 This is my first open-source project as a computer science student. 😀
 There are so many things for improvements in this web app, so please feel free to contribute to and kindly give me some advice! 😊
-(Less emoji or something...🙄)
+(from Less emoji to modifying code or something...🙄)
 
 ## Features 🎨
 
@@ -132,14 +132,12 @@ Step 3: Clone it
 Clone the forked repository. Open git bash and type:
 
 ```bash
-git clone https://github.com/<your-github-username>/python-mini-project.git
+git clone https://github.com/<your-github-username>/PowerPoint-Generator-Python-Project.git
 ```
 
 > This makes a local copy of the repository in your machine.
 >
 > ⚠️ **Replace \<your-github-username\>!**
-
-Learn more about [forking](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) and [cloning a repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
 
 </details>
 
