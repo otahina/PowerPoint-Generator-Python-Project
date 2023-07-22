@@ -110,7 +110,6 @@ git pull upstream <master>
 # Make a feature branch (Always check your current branch is up to date before creating a new branch from it to avoid merge conflicts)
 git checkout -b <branch-name>
 
-#
 ```
 
 </details>
