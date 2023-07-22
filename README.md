@@ -2,7 +2,7 @@
 
 [![made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 ![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
-[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/ndleah)
+[![View My Profile](https://img.shields.io/badge/View-My_Profile-green?logo=GitHub)](https://github.com/otahina)
 
 ## PowerPoint Generator is a smart web application that automates the creation of PowerPoint presentations.
 
