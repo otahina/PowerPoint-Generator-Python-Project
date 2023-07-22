@@ -115,6 +115,36 @@ On the [GitHub page for this repository]([https://github.com/ndleah/python-mini-
 
 ---
 
+
+<details>
+<summary>
+Step 3: Clone it
+</summary>
+
+- **Method 1:** GitHub Desktop
+
+> ⚠️ **NOTE:** If you're not familiar with Git, using **GitHub Desktop Application** is a better start. If you choose this method, make sure to download it before continuing reading.
+>
+> ❗❗ Access link to download [**here**](https://desktop.github.com).
+
+- **Method 2:** Git
+
+Clone the forked repository. Open git bash and type:
+
+```bash
+git clone https://github.com/<your-github-username>/python-mini-project.git
+```
+
+> This makes a local copy of the repository in your machine.
+>
+> ⚠️ **Replace \<your-github-username\>!**
+
+Learn more about [forking](https://help.github.com/en/github/getting-started-with-github/fork-a-repo) and [cloning a repo](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository).
+
+</details>
+
+---
+
 ## License 📄
 
 This project is licensed under the terms of the MIT license.
