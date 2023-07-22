@@ -95,7 +95,18 @@ Star the repo to start your contribution ⭐️
 
 ---
 
+<details>
+<summary>
+Step 2: Fork it
+</summary>
 
+On the [GitHub page for this repository](https://github.com/ndleah/python-mini-project), click on the Button "**Fork**".
+
+![fork image](https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png)
+
+</details>
+
+---
 
 ## License 📄
 
