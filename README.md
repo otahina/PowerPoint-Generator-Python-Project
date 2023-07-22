@@ -27,65 +27,6 @@ https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/
 
 The video is fast forwarded
 
-## Getting Started! 🚀
-
-To get a local copy up and running follow these steps:
-
-1. **Clone the repository**:
-
-```
-git clone otahina/PowerPoint-Generator-Python-Project
-```
-
-2. **Navigate to the project directory**:
-
-```
-PowerPoint-Generator-Python-Project
-```
-
-3. **Install the required Python packages. This project relies on several Python packages for its functionality**:
-
-
-```
-pip install flask flask_login flask_bcrypt flask_sqlalchemy python_dotenv python_pptx
-```
-
-4. **Run the application!**
-
-```
-python3 flaskapp.py
-```
-Make sure you set up the API key below first🙂
-
-## Setup the Secret Key and OpenAI Key 🔑
-
-
-1. The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
-
-You need to set these as environment variables in your terminal. On **Unix/Linux/macOS**, you can do this with the 'export' command:
-
-```
-export SECRET_KEY=your_secret_key
-export OPENAI_KEY=your_openai_key
-export PEXELS_API_KEY=your_pexels_key
-```
-Here's a brief description of each key and how to obtain them:
-
-**SECRET_KEY**: 🔐This is used for web application security such as session management. You can create your own secure, random string for this.
-
-**OPENAI_KEY**: 🤖This is required to access the OPENAI API. Although there's a limitation with the free version, it's sufficient for trying out this web application on your local machine. You can obtain this key by creating an account on the https://platform.openai.com.
-
-**PEXELS_API_KEY**: 🏞️ This key is used for the free image search API provided by Pexels. It's very useful for adding creative images to your presentations. You can get this key by creating a free account on the https://www.pexels.com/api
-After registering, the API key is automatically generated for you.
-
-On **Windows**, you can do this with the 'set' command:
-
-```
-set SECRET_KEY=your_secret_key
-set OPENAI_KEY=your_openai_key
-set PEXELS_API_KEY=your_pexels_key
-```
-⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
 
 ## How to contribute 💛
 
@@ -142,6 +83,70 @@ git clone https://github.com/<your-github-username>/PowerPoint-Generator-Python-
 </details>
 
 ---
+
+<details>
+<summary>
+Step 4: Create your feature branch 
+</summary>
+
+Always keep your local copy of the repository updated with the original repository.
+Before making any changes and/or in an appropriate interval, follow the following steps:
+
+- **Method 1:** GitHub Desktop
+
+Learn more about how to create new branch [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches#creating-a-branch) and how to fetch and pull origin from/to your local machine [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch).
+
+Learn more about how to fetch and pull origin from/to your local machine using **GitHub Desktop** [here](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/keeping-your-local-repository-in-sync-with-github/syncing-your-branch).
+
+- **Method 2:** Git
+
+Run the following commands **_carefully_** to update your local repository
+
+```sh
+# If you cloned a while ago, get the latest changes from upstream
+git checkout <master>
+git pull upstream <master>
+
+# Make a feature branch (Always check your current branch is up to date before creating a new branch from it to avoid merge conflicts)
+git checkout -b <branch-name>
+
+#
+```
+
+</details>
+
+---
+
+## Setup the Secret Key and OpenAI Key 🔑
+
+
+1. The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
+
+You need to set these as environment variables in your terminal. On **Unix/Linux/macOS**, you can do this with the 'export' command:
+
+```
+export SECRET_KEY=your_secret_key
+export OPENAI_KEY=your_openai_key
+export PEXELS_API_KEY=your_pexels_key
+```
+Here's a brief description of each key and how to obtain them:
+
+**SECRET_KEY**: 🔐This is used for web application security such as session management. You can create your own secure, random string for this.
+
+**OPENAI_KEY**: 🤖This is required to access the OPENAI API. Although there's a limitation with the free version, it's sufficient for trying out this web application on your local machine. You can obtain this key by creating an account on the https://platform.openai.com.
+
+**PEXELS_API_KEY**: 🏞️ This key is used for the free image search API provided by Pexels. It's very useful for adding creative images to your presentations. You can get this key by creating a free account on the https://www.pexels.com/api
+After registering, the API key is automatically generated for you.
+
+On **Windows**, you can do this with the 'set' command:
+
+```
+set SECRET_KEY=your_secret_key
+set OPENAI_KEY=your_openai_key
+set PEXELS_API_KEY=your_pexels_key
+```
+⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
+
 
 ## License 📄
 
