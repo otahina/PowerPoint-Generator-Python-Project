@@ -116,6 +116,20 @@ git checkout -b <branch-name>
 </details>
 
 ---
+<details>
+<summary>
+Step 6: Pull Request
+</summary>
+
+Go to the GitHub page of _your fork_, and **make a pull request**:
+
+![pull request image](https://i.ytimg.com/vi/rgbCcBNZcdQ/maxresdefault.jpg)
+
+Read more about pull requests on the [GitHub help pages](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
+
+I'll check your pull request. 
+
+</details>
 
 ## Setup the Secret Key and OpenAI Key 🔑
 
