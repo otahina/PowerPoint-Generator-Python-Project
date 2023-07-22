@@ -2,6 +2,8 @@
 
 [![made-with-python](https://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
 
+![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)
+
 ## PowerPoint Generator is a smart web application that automates the creation of PowerPoint presentations.
 
 ## Features 🎨
@@ -100,7 +102,7 @@ Star the repo to start your contribution ⭐️
 Step 2: Fork it
 </summary>
 
-On the [GitHub page for this repository](https://github.com/ndleah/python-mini-project), click on the Button "**Fork**".
+On the [GitHub page for this repository]([https://github.com/ndleah/python-mini-project](https://github.com/otahina/PowerPoint-Generator-Python-Project.git)), click on the Button "**Fork**".
 
 ![fork image](https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png)
 
