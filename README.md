@@ -80,6 +80,21 @@ set PEXELS_API_KEY=your_pexels_key
 ```
 ⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
 
+## How to contribute 💛
+
+<details>
+<summary>
+Step 1: Star The Repo
+</summary>
+
+Star the repo by pressing the topmost-right button to start your wonderful journey
+
+![star repo](https://docs.github.com/assets/images/help/stars/starring-a-repository.png)
+
+</details>
+
+---
+
 ## License 📄
 
 This project is licensed under the terms of the MIT license.
