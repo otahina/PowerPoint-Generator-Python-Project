@@ -128,6 +128,7 @@ Read more about pull requests on the [GitHub help pages](https://help.github.com
 I'll check your pull request. 
 
 </details>
+
 ---
 
 ## Setup the Secret Key and OpenAI Key 🔑
