@@ -87,13 +87,15 @@ set PEXELS_API_KEY=your_pexels_key
 Step 1: Star The Repo
 </summary>
 
-Star the repo by pressing the topmost-right button to start your wonderful journey
+Star the repo to start your contribution ⭐️
 
 ![star repo](https://docs.github.com/assets/images/help/stars/starring-a-repository.png)
 
 </details>
 
 ---
+
+
 
 ## License 📄
 
