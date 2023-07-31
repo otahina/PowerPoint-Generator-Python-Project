@@ -6,6 +6,7 @@ import requests
 from pptx import Presentation
 from pptx.dml.color import RGBColor
 from pptx.util import Inches
+from urllib.parse import quote_plus
 
 dir_path = 'static/presentations'
 
@@ -22,16 +23,19 @@ def parse_response(response):
             title = title_line
         content_lines = [line for line in lines[1:] if line != 'Content:']  # Skip line if it is 'Content:'
         content = '\n'.join(content_lines)  # Join the lines to form the content
-        slides_content.append({'title': title, 'content': content})
+        # Extract the keyword from the line that starts with 'Keyword:'
+        keyword_line = [line for line in lines if 'Keyword:' in line][0]
+        keyword = keyword_line.split(': ', 1)[1]
+        slides_content.append({'title': title, 'content': content, 'keyword': keyword})
     return slides_content
 
 
-def search_pexels_images(query):
+def search_pexels_images(keyword):
     API_KEY = os.getenv('PEXELS_API_KEY')
 
     # extract keyword
-    query = query.split()[0].lower()
-    print(query)
+    query = quote_plus(keyword.lower())
+    print(query) #For debug
     PEXELS_API_URL = f'https://api.pexels.com/v1/search?query={query}&per_page=1'
 
     headers = {
@@ -109,7 +113,7 @@ def create_ppt(slides_content, template_choice, presentation_title, presenter_na
 
         if insert_image:
             # fetch image URL from Pixabay based on the slide's title
-            image_url = search_pexels_images(slide_content['title'])
+            image_url = search_pexels_images(slide_content['keyword'])
             if image_url is not None:
                 # download the image
                 image_data = requests.get(image_url).content

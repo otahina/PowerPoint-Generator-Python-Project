@@ -91,7 +91,7 @@ def generate():
 
         user_message = f"I want you to come up with the idea for the PowerPoint. The number of slides is {number_of_slide}. " \
                        f"The content is: {user_text}.The title of content for each slide must be unique, " \
-                       f"and the first word must not be the same. Can you summarize the content for each slide? "
+                       f"and extract the most important keyword(within two words) for each slide. Can you summarize the content for each slide? "
 
         assistant_response = chat_development(user_message)
         print(assistant_response)
