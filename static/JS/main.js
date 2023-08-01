@@ -62,3 +62,4 @@ document.addEventListener('DOMContentLoaded', function() {
 document.getElementById('generate-form').addEventListener('submit', function() {
      document.getElementById('loading-indicator').style.display = 'block';
 });
+

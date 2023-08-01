@@ -30,6 +30,7 @@
     contentType: 'html'
   });
 
+
     </script>
     <div id="try-now">
         <a href="{{ url_for('generate') }}" class="btn btn-primary btn-lg mt-4">Try Now</a>
@@ -87,5 +88,36 @@
 </div>
 <section id="instructions">
     <h2>How To Use</h2>
+    <div class="slideshow-container">
+        <div class="slide">
+            <img src="./static/img/step1.png" alt="Step 1: ..."/>
+        </div>
+        <div class="slide">
+            <img src="./static/img/step2.png" alt="Step 2: ..."/>
+        </div>
+        <!-- You can add more slides here -->
+
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+    </div>
 </section>
+<script>
+var slideIndex = 0;
+showSlide(slideIndex);
+
+function changeSlide(n) {
+    showSlide(slideIndex += n);
+}
+
+function showSlide(n) {
+    var slides = document.getElementsByClassName("slide");
+    if (n >= slides.length) slideIndex = 0;
+    if (n < 0) slideIndex = slides.length - 1;
+    for (var i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex].style.display = "block";
+}
+</script>
+
 {% endblock content %}
