@@ -163,6 +163,21 @@ def create_ppt(slides_content, template_choice, presentation_title, presenter_na
                         run.font.name = 'Arial'
                         run.font.color.rgb = RGBColor(0, 0, 0)
 
+    else:
+        for placeholder in slide.placeholders:
+            if placeholder.placeholder_format.type == 1:  # Title
+                placeholder.text = "Credits"
+                for paragraph in placeholder.text_frame.paragraphs:
+                    for run in paragraph.runs:
+                        run.font.name = 'Arial'
+                        run.font.color.rgb = RGBColor(0, 0, 0)
+            elif placeholder.placeholder_format.type == 7:  # Content
+                placeholder.text = "Images provided by Pexels: https://www.pexels.com"
+                for paragraph in placeholder.text_frame.paragraphs:
+                    for run in paragraph.runs:
+                        run.font.name = 'Arial'
+                        run.font.color.rgb = RGBColor(0, 0, 0)
+
     # Delete the first two slides after all new slides have been added
     delete_first_two_slides(prs)
 

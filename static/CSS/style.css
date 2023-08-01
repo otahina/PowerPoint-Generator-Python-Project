@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .site-header {
-    background: linear-gradient(to right, #004aad, #cb6ce6);
+    background: linear-gradient(to right, #004aad, #e385ec);
 }
 
 
@@ -86,11 +86,11 @@ body .container.custom-main {
 }
 
 .jumbotron {
-  background-image: url('/static/img/showcase.png');
+  background-image: url('/static/img/showcase2.png');
   background-size: cover;
   color: #ffffff;
   width:  100%;
-  height: 780px;
+  height: 700px;
   border-radius: 0;
   padding:1rem 1rem;
   margin-bottom: 0px;
@@ -140,7 +140,7 @@ body .container.custom-main {
 }
 
 .description {
-    background: linear-gradient(to right, #004aad, #cb6ce6);
+    background: linear-gradient(to right, #004aad, #e385ec);
     width: 100%;
     height: 530px;
     margin: 0px;
