@@ -24,7 +24,7 @@ def parse_response(response):
         content_lines = [line for line in lines[1:] if line != 'Content:']  # Skip line if it is 'Content:'
         content = '\n'.join(content_lines)  # Join the lines to form the content
         # Extract the keyword from the line that starts with 'Keyword:'
-        keyword_line = [line for line in lines if 'Keyword:' in line][0]
+        keyword_line = [line for line in lines if 'Keyword:' or 'Keywords:' in line][0]
         keyword = keyword_line.split(': ', 1)[1]
         slides_content.append({'title': title, 'content': content, 'keyword': keyword})
     return slides_content

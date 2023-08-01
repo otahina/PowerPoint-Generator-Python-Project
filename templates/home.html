@@ -31,6 +31,7 @@
   });
 
 
+
     </script>
     <div id="try-now">
         <a href="{{ url_for('generate') }}" class="btn btn-primary btn-lg mt-4">Try Now</a>
@@ -95,7 +96,18 @@
         <div class="slide">
             <img src="./static/img/step2.png" alt="Step 2: ..."/>
         </div>
-        <!-- You can add more slides here -->
+        <div class="slide">
+            <img src="./static/img/step3.png" alt="Step 3: ..."/>
+        </div>
+        <div class="slide">
+            <img src="./static/img/step4.png" alt="Step 4: ..."/>
+        </div>
+        <div class="slide">
+            <img src="./static/img/step5.png" alt="Step 5: ..."/>
+        </div>
+        <div class="slide">
+            <img src="./static/img/step6.png" alt="Step 6: ..."/>
+        </div>
 
         <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
         <a class="next" onclick="changeSlide(1)">&#10095;</a>
@@ -118,6 +130,7 @@ function showSlide(n) {
     }
     slides[slideIndex].style.display = "block";
 }
+
 </script>
 
 {% endblock content %}
