@@ -8,6 +8,9 @@ from database import db
 from models import User
 from gpt_generate import chat_development
 from text_pp import parse_response, create_ppt
+from dotenv import load_dotenv
+
+load_dotenv()  # This loads the .env file
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.getenv('SECRET_KEY')
@@ -91,9 +94,10 @@ def generate():
 
         user_message = f"I want you to come up with the idea for the PowerPoint. The number of slides is {number_of_slide}. " \
                        f"The content is: {user_text}.The title of content for each slide must be unique, " \
-                       f"and extract the most important keyword(within two words) for each slide. Can you summarize the content for each slide? "
+                       f"and extract the most important keyword(just one word) for each slide. Can you summarize the content for each slide? "
 
         assistant_response = chat_development(user_message)
+        #Check the response
         print(assistant_response)
         slides_content = parse_response(assistant_response)
         create_ppt(slides_content, template_choice, presentation_title, presenter_name, insert_image)
