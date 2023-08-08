@@ -133,15 +133,19 @@ I'll check your pull request.
 ## Setup the Secret Key and OpenAI Key 🔑
 
 
-1. The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
+The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
+These keys are defined as environment variables, and you can easily set them up using the provided .env.example file.
 
-You need to set these as environment variables in your terminal. On **Unix/Linux/macOS**, you can do this with the 'export' command:
+1. Locate the file named .env.example in the project directory.
+2. Copy the contents of .env.example into a new file named .env.
+3. Replace the placeholder values with your actual keys:
+   
+```
+SECRET_KEY=your_secret_key
+OPENAI_KEY=your_openai_key
+PEXELS_API_KEY=your_pexels_key
+```
 
-```
-export SECRET_KEY=your_secret_key
-export OPENAI_KEY=your_openai_key
-export PEXELS_API_KEY=your_pexels_key
-```
 Here's a brief description of each key and how to obtain them:
 
 **SECRET_KEY**: 🔐This is used for web application security such as session management. You can create your own secure, random string for this.
@@ -150,15 +154,6 @@ Here's a brief description of each key and how to obtain them:
 
 **PEXELS_API_KEY**: 🏞️ This key is used for the free image search API provided by Pexels. It's very useful for adding creative images to your presentations. You can get this key by creating a free account on the https://www.pexels.com/api
 After registering, the API key is automatically generated for you.
-
-On **Windows**, you can do this with the 'set' command:
-
-```
-set SECRET_KEY=your_secret_key
-set OPENAI_KEY=your_openai_key
-set PEXELS_API_KEY=your_pexels_key
-```
-⚠️ Note that these environment variables will only be set for the duration of the terminal session. If you close the terminal and open a new one, you will need to set them again.
 
 
 ## License 📄
