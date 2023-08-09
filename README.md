@@ -22,10 +22,7 @@ There are so many things for improvements in this web app, so please feel free t
 
 ## Demo Highlights 🎬
 
-https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/2ccee5da-6b75-412b-9c0a-b32b2e0966ba
-
-
-The video is fast forwarded
+https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/82d98c7a-0244-4fed-8f6b-f6c994fd69e3
 
 
 ## How to contribute 💛
