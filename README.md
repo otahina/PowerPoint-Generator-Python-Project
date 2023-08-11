@@ -153,6 +153,14 @@ Here's a brief description of each key and how to obtain them:
 After registering, the API key is automatically generated for you.
 
 
+## Contributors ✨
+
+<a href="https://github.com/otahina/PowerPoint-Generator-Python-Project/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=otahina/PowerPoint-Generator-Python-Project" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
 ## License 📄
 
 This project is licensed under the terms of the MIT license.
