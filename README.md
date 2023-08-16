@@ -165,9 +165,9 @@ After registering, the API key is automatically generated for you.
 ## Contributors ✨
 
 <img src="https://github.com/otahina.png" width="50" height="50" alt="description">
- - [Ota Hina](https://github.com/otahina)
+<a href="https://github.com/otahina">Ota Hina</a>
 <img src="https://github.com/gaganmanku96.png" width="50" height="50" alt="description">
- - [Gagandeep Singh](https://github.com/gaganmanku96)
+<a href="https://github.com/gaganmanku96">Gagandeep Singh</a>
 
 
 ## License 📄
