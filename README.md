@@ -34,6 +34,9 @@ python3 myapp/flaskapp.py
 
 https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/82d98c7a-0244-4fed-8f6b-f6c994fd69e3
 
+## Community Discussions 🗣️
+Have a question, idea, or want to contribute? Join us in [Discussions](https://github.com/otahina/PowerPoint-Generator-Python-Project/discussions)!
+
 
 ## How to contribute 💛
 
