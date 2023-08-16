@@ -20,6 +20,11 @@ There are so many things for improvements in this web app, so please feel free t
 * **User-Friendly Interface**: Clear instructions and an intuitive design make the PowerPoint generation process seamless and straightforward.
 * **Secure Authentication**: Register and log in with peace of mind, as user information is securely stored.
 
+Clone the repo and try 🚀
+```bash
+python3 myapp/flaskapp.py
+```
+
 ## Demo Highlights 🎬
 
 https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/82d98c7a-0244-4fed-8f6b-f6c994fd69e3
