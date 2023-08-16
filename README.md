@@ -23,6 +23,9 @@ There are so many things for improvements in this web app, so please feel free t
 * **Secure Authentication**: Register and log in with peace of mind, as user information is securely stored.
 
 Clone the repo and try 🚀
+You need API key, so click here if you don't have it yet.
+[Setup the Secret Key and OpenAI Key 🔑](#setup-the-secret-key-and-openai-key-)
+
 ```bash
 python3 myapp/flaskapp.py
 ```
@@ -134,8 +137,7 @@ I'll check your pull request.
 
 ---
 
-## Setup the Secret Key and OpenAI Key 🔑
-
+### Setup the Secret Key and OpenAI Key 🔑
 
 The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
 These keys are defined as environment variables, and you can easily set them up using the provided .env.example file.
