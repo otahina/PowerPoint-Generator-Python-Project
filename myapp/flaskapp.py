@@ -82,7 +82,6 @@ def logout():
 
 
 @app.route('/generator', methods=['GET', 'POST'])
-@login_required
 def generate():
     if request.method == 'POST':
         number_of_slide = request.form['number_of_slide']
