@@ -19,10 +19,8 @@ https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/
 
 ## Table of Contents 📋
 
-## Table of Contents 📋
-
-1. [Features](#features)
-2. [Inner Structure of the Project](#inner-structure-of-the-project)
+1. [Features](#features-🎨)
+2. [Inner Structure of the Project](#inner-structure-of-the-project-🧐)
 3. [How to Contribute](#how-to-contribute)
 
 ## Features 🎨
