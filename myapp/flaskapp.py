@@ -93,10 +93,10 @@ def generate():
 
         user_message = f"I want you to come up with the idea for the PowerPoint. The number of slides is {number_of_slide}. " \
                        f"The content is: {user_text}.The title of content for each slide must be unique, " \
-                       f"and extract the most important keyword(within two words.) for each slide. Can you summarize the content for each slide? "
+                       f"and extract the most important keyword within two words for each slide. Summarize the content for each slide. "
 
         assistant_response = chat_development(user_message)
-        #Check the response
+        # Check the response (for debug)
         print(assistant_response)
         slides_content = parse_response(assistant_response)
         create_ppt(slides_content, template_choice, presentation_title, presenter_name, insert_image)
