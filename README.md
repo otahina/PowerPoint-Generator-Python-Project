@@ -25,23 +25,25 @@ https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/
 
 ## Features 
 
-* **AI-Driven Content Creation**: Utilize the power of GPT-3.5 Turbo to generate slide content based on user's input.
-* **Intelligent Slide Generation**: The tool intelligently proposes titles and content for each slide.
-* **Customizable Themes**: Choose color themes for your presentation, giving it a personalized touch.
-* **User-Friendly Interface**: Clear instructions and an intuitive design make the PowerPoint generation process seamless and straightforward.
+* **🤖 AI-Driven Content Creation**: Utilize the power of GPT-3.5 Turbo to generate slide content based on user's input.
+* **😎 Intelligent Slide Generation**: The tool intelligently proposes titles and content for each slide.
+* **🎨 Customizable Themes**: Choose color themes for your presentation, giving it a personalized touch.
+* **🙂 User-Friendly Interface**: Clear instructions and an intuitive design make the PowerPoint generation process seamless and straightforward.
 
 ## Inner Structure of the project 
 
 If you want to learn how to use the GPT API for creating PowerPoint presentations or understand how the project is 
-organized, check out [CODE_STRUCTURE.md](docs/CODE_STRUCTURE.md). 
+organized, check out [CODE_STRUCTURE.md](docs/CODE_STRUCTURE.md). 🧐
 In this document, I explain the code and the relationships between different parts of the code.
 
 
 ## How to contribute 
 
+Thank you for considering how you can contribute to the project! ✨
+
 <details>
 <summary>
-Step 1: Star The Repo
+Step 1: Star The Repo ⭐️
 </summary>
 
 Star the repo to start your contribution ⭐️
@@ -54,7 +56,7 @@ Star the repo to start your contribution ⭐️
 
 <details>
 <summary>
-Step 2: Fork it
+Step 2: Fork it 🍴
 </summary>
 
 On the [GitHub page for this repository](https://github.com/otahina/PowerPoint-Generator-Python-Project.git), click on the Button "**Fork**".
@@ -68,7 +70,7 @@ On the [GitHub page for this repository](https://github.com/otahina/PowerPoint-G
 
 <details>
 <summary>
-Step 3: Clone it
+Step 3: Clone it 🐑
 </summary>
 
 - **Method 1:** GitHub Desktop
@@ -95,7 +97,7 @@ git clone https://github.com/<your-github-username>/PowerPoint-Generator-Python-
 
 <details>
 <summary>
-Step 4: Create your feature branch 
+Step 4: Create your feature branch 🌴
 </summary>
 
 Always keep your local copy of the repository updated with the original repository.
@@ -126,7 +128,7 @@ git checkout -b <branch-name>
 ---
 <details>
 <summary>
-Step 5: Pull Request
+Step 5: Pull Request 🖐️
 </summary>
 
 Go to the GitHub page of _your fork_, and **make a pull request**:
