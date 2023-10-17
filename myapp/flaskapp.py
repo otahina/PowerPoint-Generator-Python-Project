@@ -97,7 +97,7 @@ def generate():
 
         assistant_response = chat_development(user_message)
         # Check the response (for debug)
-        print(assistant_response)
+        print(f"Assistant Response:\n{assistant_response}")
         slides_content = parse_response(assistant_response)
         create_ppt(slides_content, template_choice, presentation_title, presenter_name, insert_image)
 
