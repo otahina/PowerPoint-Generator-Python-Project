@@ -20,24 +20,24 @@ https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/
 ## Table of Contents 📋
 
 1. [Features](#features)
-2. [Inner Structure of the Project](#inner-structure-of-the-project-🧐)
-3. [How to Contribute](#how-to-contribute-💛)
+2. [Inner Structure of the Project](#inner-structure-of-the-project)
+3. [How to Contribute](#how-to-contribute)
 
-## 🎨 Features 
+## Features 
 
 * **AI-Driven Content Creation**: Utilize the power of GPT-3.5 Turbo to generate slide content based on user's input.
 * **Intelligent Slide Generation**: The tool intelligently proposes titles and content for each slide.
 * **Customizable Themes**: Choose color themes for your presentation, giving it a personalized touch.
 * **User-Friendly Interface**: Clear instructions and an intuitive design make the PowerPoint generation process seamless and straightforward.
 
-## Inner Structure of the project 🧐
+## Inner Structure of the project 
 
 If you want to learn how to use the GPT API for creating PowerPoint presentations or understand how the project is 
 organized, check out [CODE_STRUCTURE.md](docs/CODE_STRUCTURE.md). 
 In this document, I explain the code and the relationships between different parts of the code.
 
 
-## How to contribute 💛
+## How to contribute 
 
 <details>
 <summary>
