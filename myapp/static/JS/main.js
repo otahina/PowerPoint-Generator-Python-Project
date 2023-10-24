@@ -1,65 +1,48 @@
-document.querySelectorAll('.topic-card').forEach(item => {
-    item.addEventListener('click', event => {
-        let subjectName = event.currentTarget.querySelector('.topic-name').textContent;
-        let userName = "hina"
+// Function to show the modal
+function showModal() {
+    var modal = document.getElementById('modal-generate');
+    modal.style.display = 'block';
+}
 
-        console.log(`Clicked on subject: ${subjectName}`);
+// Function to hide the modal
+function hideModal() {
+    var modal = document.getElementById('modal-generate');
+    modal.style.display = 'none';
+}
 
-        document.querySelectorAll('.topic-card.selected').forEach(selectedItem => {
-            selectedItem.classList.remove('selected');
+// Event listener for the "Generate" button
+document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('generate-button').addEventListener('click', function(e) {
+        e.preventDefault();  // Prevent the default form submission
+        showModal();  // Show the modal
+
+
+        // Serialize form data and send it to the server via an AJAX POST request
+        const formData = new FormData();
+        formData.append('presentation_title', document.getElementById('presentation_title').value);
+        formData.append('presenter_name', document.getElementById('presenter_name').value);
+        formData.append('number_of_slide', document.getElementById('number_of_slide').value);
+        formData.append('user_text', document.getElementById('user_text').value);
+        formData.append('insert_image', document.getElementById('insert_image').checked);
+
+        const template_choice = document.querySelector('input[name="template_choice"]:checked').value;
+        formData.append('template_choice', template_choice);
+        // ... append other form data similarly
+        console.log([...formData]);  // Check the logged output to ensure the data is correct
+        fetch('/generator', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok ' + response.statusText);
+            }
+            return response.json();  // This assumes the server will return JSON
+        })
+        .catch(error => {
+            console.error('Error:', error);
         });
-
-        event.currentTarget.classList.add('selected');
-
-fetch('http://127.0.0.1:5001/study_plan', {
-    method: 'POST',
-    headers: {
-        'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({
-        username: userName,
-        subject: subjectName
-    })
-})
-.then(response => response.json())
-.then(data => console.log(data))   // Added this to log the response from the server
-.catch((error) => {
-  console.error('Error:', error);
-});
-
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      initialView: 'dayGridMonth',
-      events: '/get_events'  // Assuming you have an endpoint at '/get_events' that returns the events
-    });
-
-    calendar.render();
-});
-
-// Downloading a presentation
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Downloading a presentation
-    $('#generate-button').click(function(e) {
-        e.preventDefault();
-        // Show the loading indicator
-        $('#loading-indicator').show();
-        // Hide the Generate button
-        $(this).hide();
-        // Disable the form inputs
-        $('#generate-form').find('input, textarea, button').attr('disabled', 'disabled');
-        // Submit the form manually
-        $('#generate-form').submit();
     });
 });
 
-// Load indicator
-
-document.getElementById('generate-form').addEventListener('submit', function() {
-     document.getElementById('loading-indicator').style.display = 'block';
-});
 
