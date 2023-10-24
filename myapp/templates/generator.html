@@ -29,28 +29,25 @@
             <label for="dark_modern">Dark Modern</label>
         </div>
 
-        <button id="generate-button" type="submit">Generate your presentation!</button>
+        <button id="generate-button" class="btn btn-primary" type="submit">Generate your presentation!</button>
     </form>
-
-    <div id="loading-indicator">
-        <div class="spinner"></div>
-        <p>Generating your presentation...</p>
+    <!-- Modal -->
+    <div class="modal" id="modal-generate">
+        <div class="modal-content">
+          <div class="modal-body">
+              <div id="holder"></div>
+              <div id="loading-indicator">
+                <div class="spinner"></div>
+                <p>Generating your presentation...</p>
+              </div>
+              <div class="generated-header">
+                <div class="generated-header"><a href="{{ url_for('download_file', filename='generated_presentation.pptx') }}">Click to Download</a></div>
+              </div>
+          </div>
+        </div>
     </div>
-    <div class="generated-slide">
-        <div class="generated-header"><a href="{{ url_for('download_file', filename='generated_presentation.pptx') }}">Click to Download</a></div>
-    </div>
-</div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script>
-$(document).ready(function() {
-    $("#generate-form").submit(function(e) {
-        $("#loading-indicator").show();
-        $("#generate-button").prop('disabled', true);
-    });
-});
-</script>
-
 {% endblock content %}
 
 

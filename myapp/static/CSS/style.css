@@ -7,13 +7,9 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.footer {
-    background: #000080;
-    height: 250px;
-}
 
 .copyright h3 {
-    padding-top: 150px;
+    padding-top: 0.5em;
 }
 
 .copyright h3, p{
@@ -345,7 +341,7 @@ a.article-title:hover {
 
 .generate-showcase{
     margin: 40px 40px 0px 40px;
-    height: 1000px;
+    height: 100%;
     font-size: 20px;
 }
 
@@ -394,7 +390,7 @@ input[type="radio"]:checked + label {
     width: 500px;
     color: white;
     border: none;
-    border-radius: 5px;t
+    border-radius: 5px;
     cursor: pointer;
     font-size: 20px;
 }
@@ -410,19 +406,10 @@ input[type="radio"]:checked + label {
     border-radius: 5px;
 }
 
-.generated-header {
-    font-weight: bold;
-    margin-bottom: 10px;
-    height: 100px;
-}
 
 #loading-indicator{
-    display: none;
     color: white;
-}
-
-#loading-indicator {
-    display: none;
+    text-align: center;
 }
 
 #loading-indicator p{
@@ -492,13 +479,6 @@ pre {
     margin-bottom: 50px;
 }
 
-.generated-header {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: white;
-}
-
 .generated-body {
     background-color: #f8f9fa;
     padding: 20px;
@@ -537,6 +517,51 @@ pre {
     color: white;
 }
 
+#download-link{
+    color: white;
+}
+
+.generated-header {
+    font-weight: bold;
+    margin-bottom: 10px;
+    height: 100px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+#download-button {
+    color: #ffffff;
+    text-decoration: underline;
+    pointer-events: auto;  /* Enable clicking */
+}
+
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000; /* Sit on top */
+  padding-top: 70px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto;
+  background-color: rgba(178, 187, 190, 0.8);
+}
+
+.modal-content {
+    background: linear-gradient(to right, #004aad, #e385ec);
+    color: white;
+  margin: auto;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  width: 60%;
+  height: 60%;
+  overflow: auto;
+}
+
 /* Profile */
 
 .profile-page {
@@ -573,3 +598,5 @@ pre {
 .profile-info p{
     color: white;
 }
+
+
