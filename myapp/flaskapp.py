@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, url_for, flash, redirect, request, send_from_directory, abort
+from flask import Flask, render_template, url_for, flash, redirect, request, send_from_directory, abort, jsonify
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 
 from forms import RegistrationForm, LoginForm
@@ -84,11 +84,11 @@ def logout():
 @app.route('/generator', methods=['GET', 'POST'])
 def generate():
     if request.method == 'POST':
-        number_of_slide = request.form['number_of_slide']
-        user_text = request.form['user_text']
+        number_of_slide = request.form.get('number_of_slide')
+        user_text = request.form.get('user_text')
         template_choice = request.form.get('template_choice')
-        presentation_title = request.form['presentation_title']
-        presenter_name = request.form['presenter_name']
+        presentation_title = request.form.get('presentation_title')
+        presenter_name = request.form.get('presenter_name')
         insert_image = 'insert_image' in request.form
 
         user_message = f"I want you to come up with the idea for the PowerPoint. The number of slides is {number_of_slide}. " \
