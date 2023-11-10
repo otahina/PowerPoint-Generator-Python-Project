@@ -21,7 +21,9 @@ https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/
 
 1. [Features](#features)
 2. [Inner Structure of the Project](#inner-structure-of-the-project)
-3. [How to Contribute](#how-to-contribute)
+3. [How to Use](#how-to-use)
+4. [How to Contribute](#how-to-contribute)
+5. [Setup the Secret Key and OpenAI Key](set-up-api-keys)
 
 ## Features 
 
@@ -36,6 +38,97 @@ If you want to learn how to use the GPT API for creating PowerPoint presentation
 organized, check out [CODE_STRUCTURE.md](docs/CODE_STRUCTURE.md). 🧐
 In this document, I explain the code and the relationships between different parts of the code.
 
+## How to use
+
+If you want to try using this project, here is a step-by-step guide. 
+Those who want to contribute to (which is welcome!), please check [How to Contribute](#how-to-contribute)
+
+<details>
+<summary>
+Step 1: Star The Repo ⭐️
+</summary>
+
+Star the repo to start using this project 👍
+
+![star repo](https://docs.github.com/assets/images/help/stars/starring-a-repository.png)
+
+</details>
+
+---
+
+<details>
+<summary>
+Step 2: Clone It 🐑
+</summary>
+
+- **Using Git** 
+
+Open your terminal and run the following command:
+
+```bash
+git clone https://github.com/otahina/PowerPoint-Generator-Python-Project.git
+```
+
+- **Using Download ZIP**
+
+1. Go to the GitHub page of the repository.
+2. Click on the green **Code** button.
+3. In the dropdown menu, select **Download ZIP**.
+
+</details>
+
+---
+<details>
+<summary>
+Step 3: Create a Virtual Environment 📟
+</summary>
+
+On Windows 🪟
+- Open your **Command Prompt** and navigate to your project's directory.
+- Run the command line by line.
+    ```bash
+    python -m venv venv
+    .\venv\Scripts\activate
+    pip install -r requirements.txt
+    ```
+On macOS and Linux 🐧
+- Open your **Terminal** and navigate to your project's directory.
+- Run the command line by line.
+    ```bash
+    python3 -m venv venv
+    source venv/bin/activate
+    pip install -r requirements.txt
+    ```
+</details>
+
+---
+
+<details>
+<summary>
+Step 4: Setup API Keys 🔑
+</summary>
+
+⚠️ This step is very important to make the project work! 
+please make sure if you set up everything correctly. 
+Instruction ▶️ [Setup the Secret Key and OpenAI Key](set-up-api-keys)
+
+</details>
+
+---
+
+<details>
+
+<summary>
+Step 5: Run 🏃‍
+</summary>
+
+Navigate to `myapp` directory. Run `flaskapp.py`
+
+```bash
+python3 myapp/flaskapp.py
+```
+
+</details>
 
 ## How to contribute 
 
@@ -67,7 +160,6 @@ On the [GitHub page for this repository](https://github.com/otahina/PowerPoint-G
 
 ---
 
-
 <details>
 <summary>
 Step 3: Clone it 🐑
@@ -81,7 +173,7 @@ Step 3: Clone it 🐑
 
 - **Method 2:** Git
 
-Clone the forked repository. Open git bash and type:
+Clone the **forked repository**. Open terminal (command prompt) and type:
 
 ```bash
 git clone https://github.com/<your-github-username>/PowerPoint-Generator-Python-Project.git
@@ -111,12 +203,13 @@ Learn more about how to fetch and pull origin from/to your local machine using *
 
 - **Method 2:** Git
 
-Run the following commands **_carefully_** to update your local repository
+Run the following commands **_carefully_** to update your local repository.
 
-```sh
+```bash
 # If you cloned a while ago, get the latest changes from upstream
-git checkout <master>
-git pull upstream <master>
+git checkout main
+git remote add upstream https://github.com/otahina/PowerPoint-Generator-Python-Project.git
+git pull upstream main
 
 # Make a feature branch (Always check your current branch is up to date before creating a new branch from it to avoid merge conflicts)
 git checkout -b <branch-name>
@@ -131,11 +224,14 @@ git checkout -b <branch-name>
 Step 5: Pull Request 🖐️
 </summary>
 
-Go to the GitHub page of _your fork_, and **make a pull request**:
+1. Open the GitHub website and find your forked repository.
+2. On your fork's GitHub page, click 'New Pull Request'.
+3. Ensure the base branch is the original repository's branch you want to merge into(main branch), 
+and the compare branch is your feature branch.
+4. Click 'Create Pull Request', add a title and a brief description of your changes.
 
-Read more about pull requests on the [GitHub help pages](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
-
-I'll check your pull request. 
+Thank you for your contribution! 
+I'll check your pull request. 😀
 
 </details>
 
@@ -143,7 +239,7 @@ I'll check your pull request.
 
 If you want to learn more about how to contribute, visit [CONTRIBUTING.md](docs/CONTRIBUTING.md).
 
-## Setup the Secret Key and OpenAI Key 🔑
+## Setup the Secret Key and OpenAI Key 
 
 The application uses a secret key for session management and an OpenAI key for the GPT-3.5 Turbo API.
 These keys are defined as environment variables, and you can easily set them up using the provided .env.example file.
