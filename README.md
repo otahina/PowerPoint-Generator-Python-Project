@@ -23,7 +23,6 @@ https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/
 2. [Inner Structure of the Project](#inner-structure-of-the-project)
 3. [How to Use](#how-to-use)
 4. [How to Contribute](#how-to-contribute)
-5. [Setup the Secret Key and OpenAI Key](set-up-api-keys)
 
 ## Features 
 
