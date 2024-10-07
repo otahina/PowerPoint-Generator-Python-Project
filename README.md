@@ -33,7 +33,7 @@ https://github.com/otahina/PowerPoint-Generator-Python-Project/assets/108225969/
 
 ## Inner Structure of the project 
 
-If you want to learn how to use the GPT API for creating PowerPoint presentations or understand how the project is 
+If you want to learn how to use the GPT API for creating PowerPoint presentations or understand how the project is: 
 organized, check out [CODE_STRUCTURE.md](docs/CODE_STRUCTURE.md). 🧐
 In this document, I explain the code and the relationships between different parts of the code.
 
