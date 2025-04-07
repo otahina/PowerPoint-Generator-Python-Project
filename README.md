@@ -124,7 +124,7 @@ Step 5: Run 🏃‍
 Navigate to `myapp` directory. Run `flaskapp.py`
 
 ```bash
-python3 myapp/flaskapp.py
+python3 flaskapp.py
 ```
 
 </details>
